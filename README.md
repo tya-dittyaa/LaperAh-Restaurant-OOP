@@ -6,6 +6,6 @@ Ini adalah tugas akhir secara berkelompok. Tugas ini dikerjakan full menggunakan
 
 > Anggota Kelompok
 >
-> - **`2602090196` - _Luke Mangala Soegianto_**
-> - **`2602099680` - _Karina Dwinovera Mulia_**
-> - **`2602113205` - _Aditya Fajri_**
+> - **`2602090196` - _`Luke Mangala Soegianto`_** - @Skyy501
+> - **`2602099680` - _`Karina Dwinovera Mulia`_** - @KarinaD24
+> - **`2602113205` - _`Aditya Fajri`_** - @tya-dittyaa
