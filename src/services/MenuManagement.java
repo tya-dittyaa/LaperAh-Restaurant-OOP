@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 import models.Menu;
 
-public class MenuManagementSystem extends Menu{
+public class MenuManagement extends Menu{
     ArrayList<Menu> menuData = new ArrayList<>();
 
-    public MenuManagementSystem(int restaurantID, String location, int menuID, String menuName, String description,
+    public MenuManagement(int restaurantID, String location, int menuID, String menuName, String description,
             int price, String type, String specificLoc) {
         super(restaurantID, location, menuID, menuName, description, price, type, specificLoc);
     }

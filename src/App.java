@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-import services.EmployeeManagementSystem;
+import services.EmployeeManagement;
 
 public class App {
     Scanner scan = new Scanner(System.in);
@@ -37,7 +37,7 @@ public class App {
                 employeeName = scan.nextLine();
                 scan.nextLine();
 
-                EmployeeManagementSystem ems = new EmployeeManagementSystem(restaurantID, location, employeeID, employeeName);
+                EmployeeManagement ems = new EmployeeManagement(restaurantID, location, employeeID, employeeName);
 
                 ems.login(ems);
                 // Employee employee = new Employee(restaurantID, location, employeeID, employeeName);
