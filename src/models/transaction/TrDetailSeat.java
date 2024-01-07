@@ -10,4 +10,21 @@ public class TrDetailSeat extends TrHeader{
         this.totalPerson = totalPerson;
     }
 
+    public String getSeatType() {
+        return seatType;
+    }
+
+    public void setSeatType(String seatType) {
+        this.seatType = seatType;
+    }
+
+    public int getTotalPerson() {
+        return totalPerson;
+    }
+
+    public void setTotalPerson(int totalPerson) {
+        this.totalPerson = totalPerson;
+    }
+
+    
 }
