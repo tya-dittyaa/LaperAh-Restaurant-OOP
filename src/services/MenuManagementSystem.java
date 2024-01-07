@@ -1,6 +1,8 @@
-package models;
+package services;
 
 import java.util.ArrayList;
+
+import models.Menu;
 
 public class MenuManagementSystem extends Menu{
     ArrayList<Menu> menuData = new ArrayList<>();

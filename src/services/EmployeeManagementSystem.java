@@ -1,6 +1,8 @@
-package models;
+package services;
 
 import java.util.ArrayList;
+
+import models.Employee;
 
 public class EmployeeManagementSystem extends Employee{
     ArrayList<Employee> employeeData = new ArrayList<>();
