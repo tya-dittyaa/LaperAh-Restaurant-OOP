@@ -18,9 +18,10 @@ Ini adalah tugas akhir secara berkelompok. Tugas ini dikerjakan full menggunakan
 - **`2602099680` - _`Karina Dwinovera Mulia`_** - @KarinaD24
 
 ```
-1. Services folder
-2. Data Access Object (DAO) folder
-3. Consoles folder
+1. Models folder
+2. Services folder
+3. Data Access Object (DAO) folder
+4. Consoles folder
 ```
 
 - **`2602113205` - _`Aditya Fajri`_** - @tya-dittyaa
