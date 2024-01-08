@@ -9,8 +9,7 @@ public class MainMenu {
   private static Scanner scan = MainUtilities.scan;
 
   public static void HomePage() {
-    OrderMenu om = new OrderMenu();
-    Employee employee = MainUtilities.employeeLoginData; 
+    Employee employee = MainUtilities.employeeLoginData;
     int input = 0;
 
     MainUtilities.clearConsole();
@@ -25,7 +24,7 @@ public class MainMenu {
     System.out.println("===========================");
     System.out.println("1. Reservation");
     System.out.println("2. Make Order");
-    System.out.println("3. Edit Menu");
+    System.out.println("3. Finalize Order");
     System.out.println("4. Show Customers Status");
     System.out.println("5. Employee Logout");
     System.out.println("6. Exit App");
@@ -44,16 +43,15 @@ public class MainMenu {
         TransactionMenu.ReservationPage();
         return;
       case 2:
-        // make order
-        om.makeOrder();
+        OrderMenu.makeOrderMainPage();
         break;
 
       case 3:
-        // edit menu
+        OrderMenu.makeFinalizedMainPage();
         break;
 
       case 4:
-        // show customer status
+        OrderMenu.getCustomerOrderStatusPage();
         break;
 
       case 5:
@@ -70,7 +68,6 @@ public class MainMenu {
           Thread.sleep(500);
         } catch (Exception e) {
           e.printStackTrace();
-
         } finally {
           HomePage();
         }

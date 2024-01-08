@@ -1,5 +1,7 @@
+import consoles.EmployeeMenu;
+
 public class App {
     public static void main(String[] args) {
-        consoles.EmployeeMenu.LoginPage();
+        EmployeeMenu.LoginPage();
     }
 }

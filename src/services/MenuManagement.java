@@ -1,27 +1,19 @@
 package services;
 
+import java.sql.Connection;
 import java.util.ArrayList;
 
+import dao.MenuDAO;
 import models.Menu;
 
-public class MenuManagement extends Menu {
-    ArrayList<Menu> menuData = new ArrayList<>();
+public class MenuManagement {
+  private MenuDAO menuDAO;
 
-    public MenuManagement(int restaurantID, String location, int menuID, String menuName, String description,
-            int price, String type, String specificLoc) {
-        super(restaurantID, location, menuID, menuName, description, price, type, specificLoc);
-    }
+  public MenuManagement(Connection connection) {
+    this.menuDAO = new MenuDAO(connection);
+  }
 
-    public void addItem(Menu thisMenu) {
-        menuData.add(thisMenu);
-
-        System.out.println("Item successfully added!");
-    }
-
-    public void deleteItem(Menu thisMenu) {
-        menuData.remove(thisMenu);
-
-        System.out.println("Item successfully deleted!");
-    }
-
+  public ArrayList<Menu> listMenuOnBranch(int branchId) {
+    return menuDAO.listMenuOnBranch(branchId);
+  }
 }

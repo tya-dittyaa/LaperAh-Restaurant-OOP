@@ -5,6 +5,12 @@ public class TrHeader {
     private String customerName = null;
     private String status = null;
 
+    public TrHeader(int transactionID, String customerName, String status) {
+        this.transactionID = transactionID;
+        this.customerName = customerName;
+        this.status = status;
+    }
+
     public int getTransactionID() {
         return transactionID;
     }
