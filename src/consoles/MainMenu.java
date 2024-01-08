@@ -23,10 +23,11 @@ public class MainMenu {
     System.out.println("Employee Name   : " + employee.getEmployeeName());
     System.out.println("===========================");
     System.out.println("1. Reservation");
-    System.out.println("2. Edit Menu");
-    System.out.println("3. Show Customers Status");
-    System.out.println("4. Employee Logout");
-    System.out.println("5. Exit App");
+    System.out.println("2. Make Order");
+    System.out.println("3. Finalize Order");
+    System.out.println("4. Show Customers Status");
+    System.out.println("5. Employee Logout");
+    System.out.println("6. Exit App");
     System.out.println("===========================");
     System.out.print(">> ");
 
@@ -39,43 +40,25 @@ public class MainMenu {
 
     switch (input) {
       case 1:
-        String customerName, location, seatType;
-        int nSeats, nPeople;
-
-        System.out.println("[Reservation]");
-        System.out.print("Enter customer Name: ");
-        customerName = scan.nextLine();
-
-        System.out.print("Enter location: ");
-        location = scan.nextLine();
-
-        System.out.print("Enter the number of seats:");
-        nSeats = scan.nextInt();
-        scan.nextLine();
-
-        System.out.print("Enter seat type: ");
-        seatType = scan.nextLine();
-        scan.nextInt();
-
-        System.out.println("Enter the number of people per table: ");
-        nPeople = scan.nextInt();
-        scan.nextLine();
-
-        break;
-
+        TransactionMenu.ReservationPage();
+        return;
       case 2:
-        // edit menu
+        OrderMenu.makeOrderMainPage();
         break;
 
       case 3:
-        // show customers
+        OrderMenu.makeFinalizedMainPage();
         break;
 
       case 4:
+        OrderMenu.getCustomerOrderStatusPage();
+        break;
+
+      case 5:
         EmployeeMenu.LogoutPage();
         return;
 
-      case 5:
+      case 6:
         ExitPage();
         return;
 
@@ -85,7 +68,6 @@ public class MainMenu {
           Thread.sleep(500);
         } catch (Exception e) {
           e.printStackTrace();
-
         } finally {
           HomePage();
         }

@@ -8,9 +8,9 @@ public class Menu extends Branch {
     private String type = null;
     private String specificLoc = null;
 
-    public Menu(int restaurantID, String location, int menuID, String menuName, String description, int price,
+    public Menu(int branchId, String location, int menuID, String menuName, String description, int price,
             String type, String specificLoc) {
-        super(restaurantID, location);
+        super(branchId, location);
         this.menuID = menuID;
         this.menuName = menuName;
         this.description = description;

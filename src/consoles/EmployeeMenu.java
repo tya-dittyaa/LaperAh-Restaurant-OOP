@@ -82,6 +82,7 @@ public class EmployeeMenu {
     int inputId = 0;
 
     MainUtilities.clearConsole();
+    System.out.println("[ Employee Login Page ]");
     System.out.println("Input your Employee ID! [0 for back]");
     System.out.print(">> ");
 
@@ -101,6 +102,7 @@ public class EmployeeMenu {
     Employee getLogin = new EmployeeManagement(connection).getLogin(inputId);
 
     MainUtilities.clearConsole();
+    System.out.println("[ Employee Login Page ]");
 
     if (getLogin == null) {
       System.err.println("The Employee ID you entered is incorrect!");
