@@ -22,4 +22,17 @@ public class TransactionManagement {
     // change status to in order
     return 0;
   }
+
+  public void printBill(String customerName) {
+    int total = 0; // each items' price * quantity
+
+    System.out.println("[Laper Ah App]");
+    System.out.println("--------------------------");
+    System.out.println("Nama Barang\n\n Jumlah");
+    // get items price & quantity from db
+    System.out.println("--------------------------");
+    System.out.println("\n\n\n" + total);
+    System.out.println("--------------------------");
+    System.out.println("\nTHANK YOU!");
+  }
 }
