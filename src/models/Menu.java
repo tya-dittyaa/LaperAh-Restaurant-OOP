@@ -1,6 +1,6 @@
 package models;
 
-public class Menu extends Restaurant{
+public class Menu extends Branch {
     private int menuID = 0;
     private String menuName = null;
     private String description = null;
@@ -66,4 +66,5 @@ public class Menu extends Restaurant{
     public void setSpecificLoc(String specificLoc) {
         this.specificLoc = specificLoc;
     }
+
 }

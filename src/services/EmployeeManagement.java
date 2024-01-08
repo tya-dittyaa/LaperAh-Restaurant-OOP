@@ -1,29 +1,18 @@
 package services;
 
-import java.util.ArrayList;
+import java.sql.Connection;
 
+import dao.EmployeeDAO;
 import models.Employee;
 
-public class EmployeeManagement extends Employee{
-    ArrayList<Employee> employeeData = new ArrayList<>();
+public class EmployeeManagement {
+  private EmployeeDAO employeeDAO;
 
-    public EmployeeManagement(int restaurantID, String location, int employeeID, String employeeName) {
-        super(restaurantID, location, employeeID, employeeName);
-    }
-    
-    public boolean login(Employee thisEmployee) {
-        for (Employee employee : employeeData) {
-            if(employee.equals(thisEmployee)) {
-                return true;
-            }
-        }
+  public EmployeeManagement(Connection connection) {
+    this.employeeDAO = new EmployeeDAO(connection);
+  }
 
-        return false;
-    }
-
-    public void signup(Employee thisEmployee) {
-        employeeData.add(thisEmployee);
-
-        System.out.println("Sign in success!");
-    }
+  public Employee getLogin(int employeeID) {
+    return employeeDAO.getLogin(employeeID);
+  }
 }

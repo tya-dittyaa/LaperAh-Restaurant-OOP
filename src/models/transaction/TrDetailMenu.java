@@ -1,10 +1,14 @@
 package models.transaction;
 
-public class TrDetailMenu extends TrHeader{
+public class TrDetailMenu extends TrHeader {
     private int quantity = 0;
 
-    public TrDetailMenu(int transactionID, String customerName, String status, int quantity) {
-        super(transactionID, customerName, status);
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
 }

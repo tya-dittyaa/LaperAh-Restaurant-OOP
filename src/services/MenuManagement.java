@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import models.Menu;
 
-public class MenuManagement extends Menu{
+public class MenuManagement extends Menu {
     ArrayList<Menu> menuData = new ArrayList<>();
 
     public MenuManagement(int restaurantID, String location, int menuID, String menuName, String description,
@@ -20,8 +20,8 @@ public class MenuManagement extends Menu{
 
     public void deleteItem(Menu thisMenu) {
         menuData.remove(thisMenu);
-        
+
         System.out.println("Item successfully deleted!");
     }
-    
+
 }
