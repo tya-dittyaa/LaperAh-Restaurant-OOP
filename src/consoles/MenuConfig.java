@@ -27,18 +27,18 @@ public class MenuConfig {
                     break;
 
                 case 2:
-                    mm.deleteItem();
+                    // edit item
                     break;
 
                 case 3:
-                    
+                    mm.deleteItem();
                     break;
 
                 case 4:
-                    
-                    break;
+                    return;
             
                 default:
+                    System.out.println("Invalid number!");
                     break;
             }
         }
