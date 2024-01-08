@@ -1,10 +1,5 @@
-import java.util.Scanner;
-
 public class App {
-    Scanner scan = new Scanner(System.in);
-
-    public static void main(String[] args) {
-        consoles.EmployeeMenu.LoginPage();
+    public static void main(String[] args) throws Exception {
+        System.out.println("Hello World");
     }
-
 }
