@@ -39,30 +39,8 @@ public class MainMenu {
 
     switch (input) {
       case 1:
-        String customerName, location, seatType;
-        int nSeats, nPeople;
-
-        System.out.println("[Reservation]");
-        System.out.print("Enter customer Name: ");
-        customerName = scan.nextLine();
-
-        System.out.print("Enter location: ");
-        location = scan.nextLine();
-
-        System.out.print("Enter the number of seats:");
-        nSeats = scan.nextInt();
-        scan.nextLine();
-
-        System.out.print("Enter seat type: ");
-        seatType = scan.nextLine();
-        scan.nextInt();
-
-        System.out.println("Enter the number of people per table: ");
-        nPeople = scan.nextInt();
-        scan.nextLine();
-
-        break;
-
+        TransactionMenu.ReservationPage();
+        return;
       case 2:
         // edit menu
         break;
